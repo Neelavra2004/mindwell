@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import openImage from '../assets/IMG_20250726_190449.jpg'
 import '../Styles/open.css'
 
 function Open() {
@@ -39,7 +40,7 @@ function Open() {
         <div className="image-content">
           <img
             className="rocket-img"
-            src="src/assets/IMG_20250726_190449.jpg"
+            src={openImage}
             alt="Person launching on a rocket symbolizing mental wellness"
           />
         </div>

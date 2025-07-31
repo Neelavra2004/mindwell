@@ -1,4 +1,8 @@
 import React, { useState }  from 'react';
+import therapistImage1 from '../assets/doctor3.jpeg';
+import therapistImage2 from '../assets/doctor 1.jpeg';
+import therapistImage3 from '../assets/doctor4.jpeg';
+import therapistImage4 from '../assets/doctor2.jpeg';
 import '../Styles/Appoint.css';
 
 const doctors = [
@@ -6,25 +10,25 @@ const doctors = [
     name: "Dr. Aisha Khan",
     specialization: "Psychiatrist",
     available: "Mon - Fri, 10AM - 5PM",
-    image: "src/assets/doctor3.jpeg",
+    image: {therapistImage1},
   },
   {
     name: "Dr. Rajesh Mehta",
     specialization: "Clinical Psychologist",
     available: "Tue - Sat, 12PM - 6PM",
-    image: "src/assets/doctor 1.jpeg",
+    image: {therapistImage2},
   },
   {
     name: "Dr. Nidhi Sharma",
     specialization: "Therapist",
     available: "Mon, Wed, Fri, 9AM - 1PM",
-    image: "src/assets/doctor4.jpeg",
+    image: {therapistImage3},
   },
   {
     name: "Dr. Arjun Das",
     specialization: "Counselor",
     available: "Daily, 4PM - 9PM",
-    image: "src/assets/doctor2.jpeg",
+    image: {therapistImage4},
   },
 ];
 
