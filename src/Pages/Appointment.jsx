@@ -10,25 +10,25 @@ const doctors = [
     name: "Dr. Aisha Khan",
     specialization: "Psychiatrist",
     available: "Mon - Fri, 10AM - 5PM",
-    image: {therapistImage1},
+    image: therapistImage1,
   },
   {
     name: "Dr. Rajesh Mehta",
     specialization: "Clinical Psychologist",
     available: "Tue - Sat, 12PM - 6PM",
-    image: {therapistImage2},
+    image: therapistImage2,
   },
   {
     name: "Dr. Nidhi Sharma",
     specialization: "Therapist",
     available: "Mon, Wed, Fri, 9AM - 1PM",
-    image: {therapistImage3},
+    image: therapistImage3,
   },
   {
     name: "Dr. Arjun Das",
     specialization: "Counselor",
     available: "Daily, 4PM - 9PM",
-    image: {therapistImage4},
+    image: therapistImage4,
   },
 ];
 
