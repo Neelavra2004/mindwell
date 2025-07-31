@@ -1,0 +1,147 @@
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .home-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #222;
+  }
+  
+  h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 1.5rem 0 1rem;
+    color: #444;
+  }
+  
+  .appointments-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .appointment-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 12px;
+    width: 800px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+  }
+  
+  .appointment-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .appointment-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+  }
+  
+  .appointment-card h4 {
+    font-size: 1.1rem;
+    margin: 0.2rem 0;
+  }
+  
+  .appointment-card p {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .premium-box {
+    background: linear-gradient(to right, #f19dc1, #75b7e9); 
+    padding: 2rem;
+    border-radius: 16px;
+    margin: 3rem 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  }
+  
+  .premium-box h3 {
+    font-size: 1.6rem;
+    color: #cc3366;
+    margin-bottom: 1rem;
+  }
+  
+  .premium-box p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+  }
+  
+  .subscribe-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #cc3366;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .subscribe-btn:hover {
+    background-color: #b12a59;
+  }
+  .delete-btn {
+    background-color: #f87171;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #dc2626;
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .home-container {
+      padding: 1rem;
+    }
+  
+    h2 {
+      font-size: 1.6rem;
+    }
+  
+    h3 {
+      font-size: 1.2rem;
+    }
+  
+    .appointments-container {
+      justify-content: center;
+    }
+  
+    .appointment-card {
+      width: 100%;
+      max-width: 320px;
+    }
+  
+    .premium-box {
+      padding: 1.5rem;
+    }
+  }
+  

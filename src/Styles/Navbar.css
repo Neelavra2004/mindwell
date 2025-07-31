@@ -1,0 +1,120 @@
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #f2d6e2, #d6e6f2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 1000;
+}
+
+.logo span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #cc3366;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sos-button {
+  background-color: #ef4444;
+  position: absolute;
+  top: 1rem;
+  right: 5rem;
+  color: white;
+  border: none;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  display:flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sos-button:hover {
+  background-color: #dc2626;
+}
+
+.sos-icon {
+  font-size: 1rem;
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-button {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.dropdown-button:hover,
+.dropdown-button:focus {
+  background: #f0f0f0;
+  outline: none;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 130%;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  padding: 0.75rem 0;
+  z-index: 999;
+}
+
+.dropdown-list a {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.95rem;
+  transition: background 0.2s ease;
+}
+
+.dropdown-list a .icon {
+  margin-right: 10px;
+  color: #cc3366;
+}
+
+.dropdown-list a:hover,
+.dropdown-list a:focus {
+  background: #f9f1f6;
+  outline: none;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .dropdown-button {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .logo span {
+    font-size: 1.5rem;
+  }
+
+  .dropdown-list {
+    right: 0;
+    left: auto;
+    top: 110%;
+  }
+}

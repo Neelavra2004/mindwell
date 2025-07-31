@@ -1,0 +1,73 @@
+
+
+.mood-card {
+  background: linear-gradient(to right, #f19dc1, #75b7e9); 
+  border-radius: 20px;
+  padding: 1.5rem;
+  color: #fff;
+  text-align: center;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mood-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.mood-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.mood-button {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 12px;
+  padding: 0.7rem 0.5rem;
+  width: 70px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.mood-button:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+.mood-button svg {
+  font-size: 1.8rem;
+  margin-bottom: 0.4rem;
+}
+
+
+@media (max-width: 600px) {
+  .mood-buttons {
+    justify-content: center;
+    gap: 1.2rem;
+  }
+
+  .mood-button {
+    width: 60px;
+    height: 80px;
+    font-size: 0.8rem;
+  }
+
+  .mood-button svg {
+    font-size: 1.5rem;
+  }
+
+  .mood-card h3 {
+    font-size: 1.2rem;
+  }
+}
